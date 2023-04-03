@@ -35,5 +35,16 @@ public class userController {
         return aes256.decrypt(testSecret);
     }
 
+    @ResponseBody
+    @GetMapping("test3")
+    public String test3(){
+        return "성공";
+    }
+
+    @ResponseBody
+    @GetMapping("test4")
+    public String test4(){
+        return "성공";
+    }
 
 }
